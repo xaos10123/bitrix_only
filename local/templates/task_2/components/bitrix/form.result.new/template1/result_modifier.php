@@ -28,9 +28,10 @@ if ($arResult["QUESTIONS"]) {
     }
 }
 $arResult["SUBMIT_BUTTON"] = '<button class="form-button contact-form__bottom-button" data-success="Отправлено"
-                            data-error="Ошибка отправки">
+                            data-error="Ошибка отправки" type="submit" >
                         <div class="form-button__title">Оставить заявку</div>
                     </button>';
 $arResult["REQUIRED_STAR"] = '*';
+$arResult["FORM_HEADER"] = preg_replace("#<form#", "<form class='contact-form__form'", $arResult["FORM_HEADER"]);
 
 ?>
