@@ -13,6 +13,8 @@
 $this->setFrameMode(true);
 ?>
 <div class="article-card">
+
+
     <div class="article-card__title">
         <? if ($arParams["DISPLAY_NAME"] != "N" && $arResult["NAME"]): ?>
             <h3><?= $arResult["NAME"] ?></h3>
@@ -32,12 +34,12 @@ $this->setFrameMode(true);
         <div class="article-card__text">
             <div class="block-content" data-anim="anim-3">
                 <? if ($arResult["DETAIL_TEXT"] <> ''): ?>
-                <? echo $arResult["DETAIL_TEXT"]; ?>
+                    <? echo $arResult["DETAIL_TEXT"]; ?>
                 <? else: ?>
-                <? echo $arResult["PREVIEW_TEXT"]; ?>
+                    <? echo $arResult["PREVIEW_TEXT"]; ?>
                 <? endif ?>
             </div>
-            <a class="article-card__button" href="<?=$arResult["LIST_PAGE_URL"]?>">Назад к новостям</a>
+            <a class="article-card__button" href="<?= $arResult["LIST_PAGE_URL"] ?>">Назад к новостям</a>
         </div>
     </div>
 </div>
