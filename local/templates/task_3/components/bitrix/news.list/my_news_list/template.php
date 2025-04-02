@@ -3,7 +3,7 @@
 	<div id="barba-wrapper">
 		<div class="article-list">
 			<?foreach($arResult["ITEMS"] as $arItem):?>
-					<a class="article-item article-list__item" href="<?=$arItem["DETAIL_PAGE_URL"]?>" data-anim="anim-3">
+					<a class="article-item article-list__item" href="for-individuals.html" data-anim="anim-3">
 						<div class="article-item__background">
 							<img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="<?=$arItem['NAME'];?>"/>
 						</div>

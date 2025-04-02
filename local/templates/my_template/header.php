@@ -12,7 +12,7 @@ IncludeTemplateLangFile(__FILE__);
     use Bitrix\Main\Page\Asset;
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/common.css');
     ?>
-    
+
 </head>
 <body>
 	<?$APPLICATION->ShowPanel()?>
