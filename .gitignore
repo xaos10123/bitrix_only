@@ -1,3 +1,5 @@
 /bitrix/
 !/local/bitrix/
 
+local/bitrix/modules/sprint.migration
+local/php_interface/migrations
